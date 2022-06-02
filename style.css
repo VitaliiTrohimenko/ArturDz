@@ -1,0 +1,263 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@font-face {
+    font-family: 'myryad2';
+    src: url(/fonts/myriadpro-light.ttf);
+}
+@font-face {
+    font-family: 'HELVETICA2';
+    src:url(/fonts/HelveticaNeueLTPro-Bd.otf)
+   
+}
+@font-face {
+    font-family: 'myryad';
+    src:url(/fonts/MyriadPro-LightCond.eot) ;
+}
+@font-face {
+    font-family: 'HELVETICA';
+    src: url('fonts/HelveticaNeueLTProBdEx.otf');
+} 
+@font-face {
+    font-family: myryad3;
+    src: url(/fonts/myriadpro-semiboldcond.ttf);
+}
+@font-face {
+    font-family: 'HELVETICA1';
+    src: url('fonts/HelveticaNeueLTProLtEx.otf');
+    font-weight: bold;
+    }     
+body {width: 840px; 
+    margin-left: auto;
+    margin-right: auto;
+    font-family: HALVETICA1;
+}
+.header{
+    background-color: green;
+}
+.headerTitle{
+    font-size: 40px;
+    padding-top: 22px;
+    padding-bottom: 37px;
+    padding-left: 35px;
+    font-family: HELVETICA1;
+    background: linear-gradient(#769814, #b4d948);
+    color: white;
+}
+.headerTitle .lab{
+    font-family: HELVETICA ;
+    font-weight: 800;
+}
+.blockList{
+    background-color: white;
+}
+.list li {
+    display: inline-block;
+    margin: 0px;
+    font-family: HELVETICA1;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;}
+
+a{color: black;
+    text-decoration: none;
+    font-size: 22px;
+    }
+.list li .before::before{
+    content:"";
+    background-image:url(/images/arrow.png);
+    display: inline-block;
+    background-size: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    padding-right: 29px;
+}
+.promo{
+    background-color: #eeeefb;
+}
+.promo .img img{
+    padding-left: 30px;
+    height: 250px;
+    width: 400px;
+}
+.promo{display: inline-block;
+    display: flex;
+    justify-content: space-between;
+
+}
+.promo .h-2{font-family: HELVETICA1;
+    letter-spacing: -1px;
+    font-size: 40px;
+    padding-top: 45px;
+    margin-left: -80px;
+    font-weight: 100;
+}
+.promo .lab{
+    font-family: HELVETICA ;
+    font-weight: 800;
+}
+.promo .greenH{ color: green;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: myryad3;
+    padding-top: 20px;
+    margin-left: -40px;
+    letter-spacing: 2px;
+}
+.promo .content{
+    font-family: myryad2;
+    font-size:14px ;
+    padding-top: 4px;
+    margin-left: -40px;
+    line-height: 18px;
+    margin-right: 45px;
+}
+.promo .content::after{
+    content:"";
+    background-image: url(/images/arrig.png);
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background-repeat: no-repeat;
+
+}
+.main .leftColumn{
+    padding-right: 40px;
+    padding-left: 7px;
+    width: 292px;
+    height: 280px;
+    border-right: aqua solid 2px;
+}
+.main{
+    font-family: myryad2;
+    margin: 24px;
+    display: flex;
+    justify-content: space-between;  
+}
+.title2{
+    font-size: 25px;
+    padding-bottom: 18px;
+    font-weight: 700;
+}
+.leftColumn .greenH2{
+    font-family: myryad3;
+    font-size:16px ;
+    color: green;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.leftColumn p{
+    font-size: 14px;
+    line-height: 18px;
+    width: 250px;
+    margin-bottom:14px;
+}
+.leftColumn .after2::after{
+    content:"";
+    background-image: url(/images/arrig.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 8px
+
+}
+.position{
+    margin-left: 30px;
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: aqua 2px solid;
+    padding-bottom: 19px;
+}
+.doctor{
+    padding-left: 5px;
+    padding-right: 25px;
+}
+.greenH3{
+    font-family: myryad3;
+    font-size:16px ;
+    color: green;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+
+}
+.researchers p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.position2{
+    display: flex;
+    justify-content: space-between;
+}
+.lens{
+    padding-left: 35px;
+    padding-top: 25px;
+}
+.title3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+.greenH4{
+    font-family: myryad3;
+    font-size:16px ;
+    color: green;
+    letter-spacing: 2px;
+}
+.services p{
+    font-size: 15px;
+    padding-left: 25px;
+}
+.footer{
+    border-top: 4px solid aqua;
+}
+.footer p{
+    padding-top: 30px;
+    font-size: 14px;
+    padding-left: 40px;
+    font-style: myryad3;
+}
