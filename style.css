@@ -39,14 +39,17 @@ q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 @font-face {
     font-family: 'myryad2';
     src: url(/fonts/myriadpro-light.ttf);
 }
+
 @font-face {
     font-family: 'HELVETICA2';
     src:url(/fonts/HelveticaNeueLTPro-Bd.otf)
@@ -56,208 +59,223 @@ table {
     font-family: 'myryad';
     src:url(/fonts/MyriadPro-LightCond.eot) ;
 }
+
 @font-face {
     font-family: 'HELVETICA';
     src: url('fonts/HelveticaNeueLTProBdEx.otf');
-} 
+}
+
 @font-face {
     font-family: myryad3;
     src: url(/fonts/myriadpro-semiboldcond.ttf);
 }
+
 @font-face {
     font-family: 'HELVETICA1';
     src: url('fonts/HelveticaNeueLTProLtEx.otf');
     font-weight: bold;
-    }     
-body {width: 840px; 
+}
+
+body {
+    width: 840px; 
     margin-left: auto;
     margin-right: auto;
-    font-family: HALVETICA1;
+    font-family: HALVETICA1 sans-serif;
 }
-.header{
-    background-color: green;
-}
-.headerTitle{
-    font-size: 40px;
-    padding-top: 22px;
-    padding-bottom: 37px;
-    padding-left: 35px;
-    font-family: HELVETICA1;
+
+header{
     background: linear-gradient(#769814, #b4d948);
+    padding: 25px 0 37px 25px;
+}
+
+.headerTitle {
+    font-size: 40px;
+    font-family: HELVETICA1 sans-serif;
     color: white;
 }
-.headerTitle .lab{
-    font-family: HELVETICA ;
+
+.headerTitle .lab {
+    font-family: HELVETICA sans-serif;
     font-weight: 800;
 }
-.blockList{
-    background-color: white;
-}
-.list li {
-    display: inline-block;
-    margin: 0px;
-    font-family: HELVETICA1;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-bottom: 40px;}
 
-a{color: black;
-    text-decoration: none;
-    font-size: 22px;
-    }
-.list li .before::before{
-    content:"";
-    background-image:url(/images/arrow.png);
-    display: inline-block;
-    background-size: 16px;
-    height: 16px;
-    background-repeat: no-repeat;
-    padding-right: 29px;
-}
-.promo{
-    background-color: #eeeefb;
-}
-.promo .img img{
-    padding-left: 30px;
-    height: 250px;
-    width: 400px;
-}
-.promo{display: inline-block;
+.list {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    padding: 40px 0;
 }
-.promo .h-2{font-family: HELVETICA1;
-    letter-spacing: -1px;
+
+.list li {
+    font-family: HELVETICA1 sans-serif;
+}
+
+a {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+.list li {
+    position: relative;
+}
+
+.list li + li::before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: -35px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/arrow.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+}
+
+.promo {
+    padding: 10px  45px;
+    display: flex;
+    background-color: #eeeefb;
+    justify-content: space-between
+}
+
+.promo .article {
+    width: 50%;
+}
+
+.promo .article img {
+    width: 100%;
+    height: auto;
+}
+
+.slogan {
+    width: 50%;
+    padding: 40px 8px 30px;
+}
+
+.promo h2 {
+    margin-left: -70px;
+    margin-bottom: 20px;
+    font-family: HELVETICA1 sans-serif;
     font-size: 40px;
-    padding-top: 45px;
-    margin-left: -80px;
     font-weight: 100;
 }
-.promo .lab{
-    font-family: HELVETICA ;
+
+.promo .large {
+    font-family: HELVETICA sans-serif;
     font-weight: 800;
 }
-.promo .greenH{ color: green;
+
+.promo h3 { 
+    font-family: myryad3 sans-serif;
     font-size: 15px;
     font-weight: 900;
-    font-family: myryad3;
-    padding-top: 20px;
-    margin-left: -40px;
     letter-spacing: 2px;
+    color: green;
 }
-.promo .content{
-    font-family: myryad2;
-    font-size:14px ;
-    padding-top: 4px;
-    margin-left: -40px;
+
+.promo p {
+    font-family: myryad2 sans-serif;
+    font-size:16px ;
     line-height: 18px;
-    margin-right: 45px;
 }
-.promo .content::after{
+
+.promo p::after {
     content:"";
     background-image: url(/images/arrig.png);
     display: inline-block;
+    background-repeat: no-repeat;
     width: 12px;
     height: 8px;
-    background-repeat: no-repeat;
+}
 
-}
-.main .leftColumn{
-    padding-right: 40px;
-    padding-left: 7px;
-    width: 292px;
-    height: 280px;
-    border-right: aqua solid 2px;
-}
-.main{
-    font-family: myryad2;
-    margin: 24px;
+.main {
     display: flex;
-    justify-content: space-between;  
+    padding: 24px 0 0 30px;
 }
-.title2{
+
+.main .leftColumn {
+    max-height: 280px;
+    border-right: #eeeefb solid 2px;
+}
+
+.leftColumn h2 {
+    margin-bottom: 18px;
     font-size: 25px;
-    padding-bottom: 18px;
     font-weight: 700;
 }
-.leftColumn .greenH2{
-    font-family: myryad3;
+
+.leftColumn h3 {
+    font-family: myryad3 sans-serif;
     font-size:16px ;
-    color: green;
     letter-spacing: 2px;
-    padding-bottom: 10px;
+    color: green;
+    font-weight: 800;
 }
-.leftColumn p{
-    font-size: 14px;
-    line-height: 18px;
-    width: 250px;
+
+.leftColumn p {
     margin-bottom:14px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: 25px;
+    font-family: myryad2 sans-serif;
 }
-.leftColumn .after2::after{
+
+.leftColumn p:last-child::after {
     content:"";
     background-image: url(/images/arrig.png);
     display: inline-block;
     background-repeat: no-repeat;
     width: 12px;
-    height: 8px
-
+    height: 8px;
 }
-.position{
+
+.section {
     margin-left: 30px;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
     width: 480px;
     display: flex;
     justify-content: space-between;
-    border-bottom: aqua 2px solid;
-    padding-bottom: 19px;
 }
-.doctor{
-    padding-left: 5px;
-    padding-right: 25px;
-}
-.greenH3{
-    font-family: myryad3;
-    font-size:16px ;
-    color: green;
-    letter-spacing: 2px;
-    padding-bottom: 10px;
 
+.wrapper .section:first-child {
+    border-bottom: #eeeefb 2px solid;
 }
-.researchers p{
-    font-size: 14px;
-    letter-spacing: 0.5px;
+
+.section .picture img {
+    width: 180px;
+    height: auto;
+    margin-right: 25px;
 }
-.position2{
-    display: flex;
-    justify-content: space-between;
-}
-.lens{
-    padding-left: 35px;
-    padding-top: 25px;
-}
-.title3{
-    font-size: 25px;
-    font-weight: 700;
-    padding-top: 25px;
-    padding-left: 30px;
-    padding-bottom: 20px;
-}
-.greenH4{
-    font-family: myryad3;
+
+.aside .inner {
+    font-family: myryad3 sans-serif;
     font-size:16px ;
-    color: green;
     letter-spacing: 2px;
+    color: green;
+    font-weight: 800;
 }
-.services p{
-    font-size: 15px;
-    padding-left: 25px;
+
+.section .aside p {
+    font-weight: 14px;
+    font-family: myryad2 sans-serif;
 }
-.footer{
-    border-top: 4px solid aqua;
+
+.subtitle {
+    font-size: 25px;
+    font-family: myryad2 sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
-.footer p{
-    padding-top: 30px;
+
+footer {
+    margin-top: -22px;
+    padding: 40px 0 40px 40px;
+    border-top: 7px solid #eeeefb;
+}
+
+footer p {
     font-size: 14px;
-    padding-left: 40px;
-    font-style: myryad3;
+    font-style: myryad2 sans-serif;
 }
